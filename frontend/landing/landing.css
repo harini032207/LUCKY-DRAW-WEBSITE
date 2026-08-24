@@ -1,0 +1,134 @@
+:root {
+    --midnight: #020617;
+    --pearl-white: #f8fafc;
+    --pearl-glow: rgba(248, 250, 252, 0.5);
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--midnight);
+    color: var(--pearl-white);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- FADE IN / OUT LOGIC --- */
+.fade-in {
+    animation: globalFade 3s ease-in forwards;
+}
+
+.fade-out {
+    animation: globalFadeOut 1.5s ease-out forwards;
+}
+
+@keyframes globalFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes globalFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* --- NIGHT SKY & STARS --- */
+.night-sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #0a122a 0%, #020617 100%);
+    z-index: -1;
+}
+
+/* Creating stars using box-shadows for high performance */
+.stars, .stars2, .stars3 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: transparent;
+}
+
+.stars {
+    width: 1px; height: 1px;
+    box-shadow: 450px 300px #FFF , 150px 100px #FFF, 800px 500px #FFF, 1200px 800px #FFF, 200px 700px #FFF, 1400px 200px #FFF, 900px 100px #FFF;
+    opacity: 0.5;
+}
+
+.stars2 {
+    width: 2px; height: 2px;
+    box-shadow: 100px 400px #FFF , 500px 100px #FFF, 900px 600px #FFF, 1300px 300px #FFF;
+    opacity: 0.3;
+}
+
+/* --- TYPOGRAPHY (PEARL LOOK) --- */
+.text-wrapper {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.enlit-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    letter-spacing: 25px;
+    font-weight: 400;
+    color: var(--pearl-white);
+    text-shadow: 0 0 20px var(--pearl-glow), 0 0 40px rgba(255,255,255,0.1);
+    /* Soft pulsing glow */
+    animation: pearlPulse 4s infinite ease-in-out;
+}
+
+.tagline {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    color: rgba(248, 250, 252, 0.6);
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+@keyframes pearlPulse {
+    0%, 100% { text-shadow: 0 0 20px var(--pearl-glow); }
+    50% { text-shadow: 0 0 40px var(--pearl-glow), 0 0 10px white; }
+}
+
+/* --- GLASSMOPHISM BUTTON --- */
+.button-wrapper {
+    text-align: center;
+}
+
+.glass-button {
+    text-decoration: none;
+    color: var(--pearl-white);
+    padding: 15px 40px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: 2px; /* Sharp corners for a more premium look */
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+.glass-button:hover {
+    background: var(--pearl-white);
+    color: var(--midnight);
+    box-shadow: 0 0 30px var(--pearl-glow);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .enlit-logo { font-size: 3rem; letter-spacing: 12px; }
+    .tagline { font-size: 0.7rem; }
+}

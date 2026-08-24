@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENLIT | Results 2026</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+
+    <div class="night-sky">
+        <div class="star-field"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="../home/home.html" class="logo">ENLIT</a>
+        <a href="../home/home.html" class="back-link">BACK TO HOME</a>
+    </nav>
+
+    <main class="results-viewport">
+        <!-- HEADER -->
+        <header class="hero-header">
+            <h1 class="pearl-title">LUCKY DRAW</h1>
+            <p id="movie-tag" class="tagline">LOADING EVENT...</p>
+            <p id="venue-tag" class="tagline">LOADING VENUE...</p>
+        </header>
+
+        <!-- LIVE TIMER SECTION -->
+        <section id="timer-section" class="display-active">
+            <div class="timer-container">
+                <div class="time-block">
+                    <span id="days" class="time-num">00</span>
+                    <span class="time-label">DAYS</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours" class="time-num">00</span>
+                    <span class="time-label">HOURS</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes" class="time-num">00</span>
+                    <span class="time-label">MINS</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds" class="time-num">00</span>
+                    <span class="time-label">SECS</span>
+                </div>
+            </div>
+            <p class="announcement-note">RESULTS LIVE ON AUGUST 27, 2026 • 5:00 PM IST</p>
+        </section>
+
+        <!-- WINNERS SECTION (Revealed by JS) -->
+        <section id="winners-section" class="hidden"><br><br>
+            <h2 class="reveal-title">THE CHOSEN ONES</h2>
+            <div id="winners-grid" class="winners-grid">
+                <!-- Names injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="winners.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>
