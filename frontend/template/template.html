@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Template Contest | ENLIT</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+
+    <!-- Cinematic Night Sky Background -->
+    <div class="night-sky">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+    </div>
+
+    <!-- Responsive Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">ENLIT</div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="pearl-dot"></span>
+                <span class="pearl-dot"></span>
+                <span class="pearl-dot"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="../home/home.html">HOME</a></li>
+                <li><a href="../about/about.html">ABOUT</a></li>
+                <li><a href="template.html" class="active">TEMPLATE</a></li>
+                <li><a href="../results/results.html">RESULTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <!-- Header -->
+        <header class="page-header">
+            <h1 class="pearl-title">POSE & POST</h1>
+            <p class="tagline">Strike Your Pose & Grab a Movie Screening Ticket</p>
+        </header>
+
+        <!-- Contest Section -->
+        <section class="contest-section">
+            <div class="glass-card">
+                <h2 class="section-title">Download Template</h2>
+                <p class="description">Download the template, strike your best pose, and tag the Enlit Club account. Best poses win Movie Screening Tickets!</p>
+                
+                <!-- Image Preview of the Template -->
+                <div class="image-preview-box">
+                    <!-- Path to your JPEG file -->
+                    <img src="../assets/images/contest-template.jpeg" alt="Contest Template Preview">
+                </div>
+
+                <!-- Direct Download Button -->
+                <div class="cta-area">
+                    <a href="../assets/images/contest-template.jpeg" download="ENLIT_Contest_Template.jpg" class="pearl-btn">
+                        DOWNLOAD TEMPLATE
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="template.js"></script>
+</body>
+</html>

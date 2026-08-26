@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // TARGET DATE: August 27, 2026, 5:00 PM IST
     // Indian Standard Time is UTC + 5.5 hours
     // We define the target in ISO format for maximum accuracy
-    const targetDate = new Date("2026-08-27T17:00:00+05:30").getTime();
+    const targetDate = new Date("2026-08-27T20:00:00+05:30").getTime();
 
     const timerSection = document.getElementById('timer-section');
     const winnersSection = document.getElementById('winners-section');
