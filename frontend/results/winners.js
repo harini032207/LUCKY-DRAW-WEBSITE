@@ -6,9 +6,9 @@ const eventDetails = {
     venue: "Venue:Easwari Engineering College"
 };
 const luckyWinners = [
-    "Aarav Sharma", "Beatrix Potter", "Catherine J.", "David Miller",
-    "Elena Gilbert", "Farhan Akhtar", "Grace Hopper", "Hina Khan",
-    "Ishaan Khattar", "Jasmine Lee"
+    "Aarif.B.Md-Avengers:ENDGAME", "Chandraprakash.R-harry potter(chapter 3)", "Ezhil Murugan.S-Avengers:ENDGAME", "HARISH-harry potter(chapter 3)",
+    "Iniyaa.M--Avengers:ENDGAME", "Jai Harini.P-harry potter(chapter 3)", "Kishore.M.S-Avengers:ENDGAME", "Sanath.S-harry potter(chapter 3)",
+    "Yazhini Nermozhiyal-Avengers:ENDGAME", "Yuthika.S-harry potter(chapter 3)"
 ];
 
 // Optional event info
